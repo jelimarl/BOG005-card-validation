@@ -6,8 +6,28 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header>
+      <h1>Portal de Pagos</h1>
+    </header>
+    <main>
+      <h2>INTERNET HOGAR</h2>
+      <form>
+        <div>
+          <label>Cuenta o ref de pago: </label>
+          <input>
+        </div>
+        <div>
+          <label>Número de tarjeta de crédito (sin espacios): </label>
+          <input type="text" id="cardNumber" required minlength="1" maxlength="16">
+        </div>
+        <div class="box">
+          <input type="button" id="payButton" value="Pagar">
+        </div>
+        <div id="showIsValid">
+          <p></p>
+        </div>
+      </form>
+    </main>
     <footer></footer>
     <script src="index.js" type="module"></script>
   </body>
