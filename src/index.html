@@ -11,55 +11,44 @@
       <h1><i class="fa-solid fa-bars"></i> Portal de Pagos <input type="button" value="Iniciar Sesión" class="button1"></h1>
       <nav>
         <ul>
-          <li><a href="#page1">Inicio</a></li>
-          <li><a href="#page2">Internet Hogar</a></li>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#internet">Internet Hogar</a></li>
+          <li><a href="#">Telefonía Celular</a></li>
         </ul>
       </nav>
     </header>
     
-    <div id="page1" class="pages">
-      <main>
-        <p id="message1">Por favor selecciona el servicio que deseas pagar</p>
-      </main>
-      <div class="footer1">
-        <footer>
-          <p>Contacto: <i class="fa-solid fa-phone"></i> 01 8000 12 3456 | <i class="fa-solid fa-envelope"></i> PortaldePago@en-contacto.co</p>
-        </footer>
-      </div>
-    </div>
-    
-    <div id="page2" class="pages">
-      <main>
-        <div class="box">
-          <div>
-            <h2>INTERNET HOGAR</h2>
-          </div>
-          <div >
-            <img src="https://www.altonivel.com.mx/assets/images/Estructura_V3/Tecnologia/Soluciones/wifi-hogar.jpg" class="pic">
-          </div>
-          <div class="push">
-            <label>Cuenta o ref de pago: </label>
-            <input type="text" id="account">
-          </div>
-          <div>
-            <label>Número de tarjeta de crédito: </label>
-            <input type="text" id="cardNumber">
-          </div>
-          <div>
-            <input type="button" id="payButton" value="Pagar" class="button2">
-          </div>
-          <div id="showIsValid" class="message2">
-            <p ></p>
-          </div>
-        </div>
-      </main>
-      <div class="footer2">
-        <footer>
-          <p>Contacto: <i class="fa-solid fa-phone"></i> 01 8000 12 3456 | <i class="fa-solid fa-envelope"></i> PortaldePago@en-contacto.co</p>
-        </footer>
-      </div>
-    </div>
+    <main>
 
+      <div id="internet" class="box">
+        <div>
+          <h2>INTERNET HOGAR</h2>
+        </div>
+        <div >
+          <img src="https://www.altonivel.com.mx/assets/images/Estructura_V3/Tecnologia/Soluciones/wifi-hogar.jpg" class="pic">
+        </div>
+        <div class="push">
+          <label>Cuenta o ref de pago: </label>
+          <input type="text" id="account">
+        </div>
+        <div>
+          <label>Número de tarjeta de crédito: </label>
+          <input type="text" id="cardNumber">
+        </div>
+        <div>
+          <input type="button" id="payButton" value="Pagar" class="button2">
+        </div>
+        <div id="showIsValid" class="message">
+          <p ></p>
+        </div>
+      </div>
+
+    </main>
+    
+    <footer>
+      <p>Contacto: <i class="fa-solid fa-phone"></i> 01 8000 12 3456 | <i class="fa-solid fa-envelope"></i> PortaldePago@en-contacto.co</p>
+    </footer>
+      
     <script src="index.js" type="module"></script>
   </body>
 </html>

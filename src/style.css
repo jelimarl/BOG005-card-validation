@@ -33,46 +33,18 @@ h1 {
     margin-left: 900px;
 }
 
-.pages:not(:target) {
-    display: none;
-}
-
-#message1 {
-    color: black;
-    font-size: 25px;
-    margin-top: 150px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.footer1 {
-    background-color: black;
-    margin-top: 339px;
-    height: 55px;  
-    width: 100%;   
-}
-
-p {
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 16px;
-    padding-top: 15px;
-    padding-left: 15px;
-    text-align: center;
-    font-weight: bold;
-}
-
 .box {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 440px;
+    height: 420px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;   
     background-color: white;
     margin-top: 60px;
-    margin-left: 400px;
-    margin-right: 400px;  
+    margin-left: 440px;
+    margin-right: 440px;  
 }
 
 h2 {
@@ -100,19 +72,28 @@ h2 {
     padding: 0 0 4px 0;
 }
 
-.message2 {
+.message {
     font-weight: bold;
     padding: 0.5em;
     font-size: 20px;
 }
 
-.footer2 {
+footer {
     background-color: black;
-    margin-top: 37px;
+    margin-top: 57px;
     height: 55px;  
     width: 100%;
 }
 
+p {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    padding-top: 15px;
+    padding-left: 15px;
+    text-align: center;
+    font-weight: bold;
+}
 
 
 
