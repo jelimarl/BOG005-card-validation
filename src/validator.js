@@ -1,5 +1,5 @@
 const validator = {
-  // ...
+  
   isValid: function(creditCardNumber) {
     let arrayReversed = creditCardNumber.split('').reverse();
     

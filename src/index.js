@@ -2,29 +2,37 @@ import validator from './validator.js';
 let cardNumber = document.getElementById('cardNumber');
 const payButton = document.getElementById('payButton');
 let showIsValid = document.getElementById('showIsValid');
+let account = document.getElementById('account');
 
 function showValidation () {
     let creditCardNumber = cardNumber.value;
+    const patternComparison = /\D/.test(creditCardNumber);
+    let accountNumber = account.value;
 
-    if (creditCardNumber=='') {
-        alert('Escribe tu número de tarjeta de crédito');
+    if (accountNumber == '') {
+        return alert('Ingresa la cuenta o ref de pago');
+    }
+    
+    if(patternComparison == true) {
+        alert('Ingresa solamente números');
     }
     else {
-        let lastFourDigits = validator.maskify(creditCardNumber);
-        cardNumber.value = lastFourDigits;
-        
-        let validation = validator.isValid(creditCardNumber);
 
-        if (validation==true) {
-            let valid = "Aprobado";
-            showIsValid.innerHTML = valid;
+        if(cardNumber.value == '') {
+            alert('Ingresa el número de tarjeta de crédito');
         }
         else {
-            let invalid = "Tarjeta inválida";
-            showIsValid.innerHTML = invalid;
+            let lastFourDigits = validator.maskify(creditCardNumber);
+            cardNumber.value = lastFourDigits;
+                
+            let validation = validator.isValid(creditCardNumber);
+            if (validation==true) {
+                showIsValid.innerHTML = 'Transacción Aprobada';
+            }
+            else {
+                showIsValid.innerHTML = 'Tarjeta inválida';
+            }
         }
-    } 
-}
-
+    }
+}     
 payButton.addEventListener("click", showValidation);
-console.log(validator);
