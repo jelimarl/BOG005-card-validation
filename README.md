@@ -53,3 +53,4 @@ La sugerencia principal sobre el prototipo inicial fue agregar una imagen o íco
 ## 3.5 Prototipo final
 
 ![gráfica prototipo final](/src/image/Prototipo%20final.jpg)
+
